@@ -4,7 +4,6 @@
   (func $is_ascii
     (param i32)
     (result i32)
-    (local i32)
 
     ;; Check if byte is higher than 31
     local.get 0
@@ -12,7 +11,7 @@
     i32.gt_u
 
     ;; Check if byte is lower than 127
-    local.get 1
+    local.get 0
     i32.const 127
     i32.lt_u
 
